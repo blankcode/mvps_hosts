@@ -1,5 +1,5 @@
 ########
-# MVPs Host Block file updater 2016-07-12
+# MVPs Host Block file updater 2016-07-12 for MAC
 #   mvps_update.sh
 #   Written by:
 #     Brian Blankenship
@@ -10,7 +10,7 @@
 
 mkdir /etc/tmpbb #Make a tmp dir
 cd /etc/tmpbb #go to tmp dir
-curl -k http://winhelp2002.mvps.org/hosts.zip > hosts.zip #download the hosts file from mvps and save to hosts.zip
+curl http://winhelp2002.mvps.org/hosts.zip > hosts.zip #download the hosts file from mvps and save to hosts.zip
 unzip hosts.zip #inflate hosts.zip
 cat HOSTS > /etc/hosts #replace the /etc/hosts file with the new one
 rm -rf /etc/tmpbb #remove the tmp dir
