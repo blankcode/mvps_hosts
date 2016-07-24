@@ -8,12 +8,12 @@
 
 ## No Error handling and no testing :(
 
-mkdir /etc/tmpbb #Make a tmp dir
-cd /etc/tmpbb #go to tmp dir
+mkdir /etc/tmpMVP #Make a tmp dir
+cd /etc/tmpMVP #go to tmp dir
 curl http://winhelp2002.mvps.org/hosts.zip > hosts.zip #download the hosts file from mvps and save to hosts.zip
 unzip hosts.zip #inflate hosts.zip
 cat HOSTS > /etc/hosts #replace the /etc/hosts file with the new one
-rm -rf /etc/tmpbb #remove the tmp dir
+rm -rf /etc/tmpMVP #remove the tmp dir
 dscacheutil -flushcache #reset the DNS Cache and initialize the new hosts file
 
 exit 0 #Exit and leave
