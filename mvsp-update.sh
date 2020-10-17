@@ -2,11 +2,10 @@
 # MVPs Host Block file updater 2016-07-12 for MAC
 #   mvps_update.sh
 #   Written by:
-#     Brian Blankenship
-#       brianblankenship1978@gmail.com
+#     Brian Blankenship <brianblankenship1978@gmail.com>
+#   Why: I made this in a pinch for an aunt of my wife.
+#   Add a cron job to update regularly.
 ########
-
-## No Error handling and no testing :(
 
 mkdir /etc/tmpMVP #Make a tmp dir
 cd /etc/tmpMVP #go to tmp dir
