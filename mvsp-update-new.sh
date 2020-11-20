@@ -23,3 +23,4 @@ NEW_FILE=$(md5sum HOSTS); OLD_HOSTS=$(md5sum /etc/hosts); # Set the MD5SUMs from
 }; 
 
 exit 0; # Exit well and leave.
+
